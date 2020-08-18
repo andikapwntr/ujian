@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No.1</title>
+</head>
+<body>
+
+    <h1>Drawing Tools</h1>
+
+    <p>1.Persegi</p>
+    <p>2. Segitiga Siku2 Rata Kiri</p>
+    <p>3.Segitiga Siku2 Rata Kanan</p>
+    <br>
+
+    Jenis Bangunan:
+    <input type="text" id="bangunan"></input>
+    <br><br>
+    Ukuran :
+    <input type="text" id="ukuran"></input>
+    <br><br>
+    <button id="lihat" onclick="SegitigaRataKiri()">Lihat</button>
+    <br>
+
+    <h3 id="hasil"></h3>
+    
+   
+</body>
+
+<script>
+
+    
+    function SegitigaRataKiri(a,b){
+        
+        var a = document.getElementById('bangunan').value
+        var b = document.getElementById('ukuran').value
+        
+        var output= ''
+
+        for(let i=1; i<=inputukuran; i++){
+            for(let j=i; j<=inputukuran; j++){
+                output += '*'
+            }
+
+            output +='<br>'
+        }
+
+        document.getElementById('hasil').innerHTML = output
+    }
+
+
+    function Persegi(a,b){
+
+        var inputbangunan = document.getElementById('bagunan').elements[0].value
+        var inputukuran = document.getElementById('ukuran').value
+
+        var output=''
+
+        for(let i=0; i<inputukuran; i++){
+            for(j=0; j<i+1; j++){
+                output +='<br>'
+
+            }
+
+            output += '*'
+        }
+
+
+
+    }
+
+    function SegitigaRataKanan(a,b){
+
+        var inputbangunan = document.getElementById('bagunan').value
+        var inputukuran = document.getElementById('ukuran').value
+
+        output
+
+    }
+
+    
+
+
+
+
+
+
+</script>
+</html>
